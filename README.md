@@ -1,20 +1,22 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Hassi Berkane RH
 
-# Run and deploy your AI Studio app
+This project is configured for deployment to GitHub Pages.
 
-This contains everything you need to run your app locally.
+## Deployment Instructions
 
-View your app in AI Studio: https://ai.studio/apps/drive/1g_SyCJ3j9TwxSws1tD3YmZy9U-7UF800
+1.  **Push to GitHub**: Ensure your code is pushed to a GitHub repository.
+2.  **Install Dependencies**: Run `npm install`.
+3.  **Deploy**: Run `npm run deploy`.
+    This command will build the project and push the `dist` folder to the `gh-pages` branch.
+4.  **Configure GitHub Pages**:
+    -   Go to your repository settings on GitHub.
+    -   Navigate to "Pages".
+    -   Select the `gh-pages` branch as the source.
+    -   Save.
 
-## Run Locally
+Your site will be available at `https://<username>.github.io/<repo-name>/`.
 
-**Prerequisites:**  Node.js
+## Configuration
 
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+-   **Base Path**: The `vite.config.ts` file has been updated with `base: './'` to support relative paths.
+-   **Homepage**: Update the `homepage` field in `package.json` with your actual GitHub Pages URL.
